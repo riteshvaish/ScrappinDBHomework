@@ -41,9 +41,10 @@
                 <!-- Weather Card -->
                 <div class="col-lg-4 col-md-4 col-sm-12">
 
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 21rem;">
                         <div class="card-body text-white bg-dark">
-                            <h6 class="card-title">Current Weather on Mars</h6>
+                            <h3 class="card-title">Current Weather on Mars</h3>
+                            
                             <p class="card-text">{{ mars.mars_weather }}</p>
                         </div>
 
@@ -52,15 +53,15 @@
                     <!-- Table -->
                     <br>
                     <h3>Mars Facts</h3>
-                    <div style="max-width: 450px; max-height: 150px; font-size: 15px; margin-bottom: 65px;">
-                        {{ mars.mars_facts|safe}}
+                    <div class="card-body text-white bg-dark" style="max-width: 450px; max-height: 250px; font-size: 15px; margin-bottom: 65px;">
+                        {{ mars.facts_table}}
                     </div>
                 </div> <!-- col4 -->
             </div><!-- Row -->
         </div><!-- Container -->
 
         <!-- Cards -->
-        <h3 style="padding-top: 50px; margin-top: 100px; text-align: center;">Mars Hemispheres</h3>
+        <h2 style="padding-top: 50px; margin-top: 100px; text-align: center;">Mars Hemispheres</h2>
         <div class="card-deck">
             <hr>
             <div class="col-md-12">
